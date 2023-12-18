@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage with Divided Div</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="white-field"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cellulator</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="editFieldMenu"></div>
+    <div id="white-field"></div>
+    <div class="dropdownMenu">
+      <div class="dropdown" id="fieldTypeDD">
+        <button id="fieldTypeButton">Choose Type</button>
+        <button onclick="setBrushType('Earth')">Earth</button>
+        <button onclick="setBrushType('Water')">Water</button>
+        <button onclick="setBrushType('Mountain')">Mountain</button>
+        <button onclick="setBrushType('Human')">Human</button>
+        <button onclick="setBrushType('Delete')">Delete</button>
+        <button onclick="setBrushType('Select')">Select</button>
+      </div>
+    </div>
+  </body>
 </html>
